@@ -371,6 +371,7 @@ static void ble_on_characteristic_found(mac_addr_t mac, ble_uuid_t service_uuid,
     ESP_LOGD(TAG, "Found new characteristic!");
     ESP_LOGD(TAG, "  Service: %s", uuidtoa(service_uuid));
     ESP_LOGD(TAG, "  Characteristic: %s", uuidtoa(characteristic_uuid));
+    ESP_LOGD(TAG, "  Properties: 0x%x", properties);
     char *topic;
 
     if (!config_ble_service_should_include(uuidtoa(service_uuid)) ||
