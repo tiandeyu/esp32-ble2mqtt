@@ -5,6 +5,7 @@
 #include "ble_utils.h"
 #include <stddef.h>
 #include <stdint.h>
+#include <endian.h>
 
 /* Constants */
 #define CHAR_PROP_BROADCAST (1 << 0)
